@@ -1,17 +1,36 @@
-/* --- ADVANCED UI SYSTEM --- */
+/* 4Biz International - Ultra Advanced UI System
+    Focus: Mathematical Alignment & High-End Visuals
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
 :root {
+    /* Brand Colors */
     --bg: #050505;
-    --accent: #7000FF;
-    --secondary: #00F0FF;
+    --accent: #7000FF;      /* Electric Purple */
+    --secondary: #00F0FF;   /* Cyber Cyan */
     --text: #ffffff;
     --text-dim: #a0a0a0;
+    
+    /* Glassmorphism & Borders */
     --glass: rgba(255, 255, 255, 0.03);
     --border: rgba(255, 255, 255, 0.1);
+    
+    /* Layout Constants */
     --container-width: 1200px;
     --transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+/* --- Global Reset & Core Alignment --- */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body { 
     background: var(--bg); 
@@ -21,14 +40,16 @@ body {
     overflow-x: hidden; 
 }
 
-/* Perfect Alignment Container */
+/* The 'Anchor' Container: 
+   This ensures every section starts at the same horizontal pixel.
+*/
 .container { 
     max-width: var(--container-width); 
     margin: 0 auto; 
-    padding: 0 40px; /* Essential for text alignment */
+    padding: 0 40px; 
 }
 
-/* --- Particles --- */
+/* --- Background Particles --- */
 #particleCanvas { 
     position: fixed; 
     top: 0; left: 0; 
@@ -37,31 +58,53 @@ body {
     pointer-events: none; 
 }
 
-/* --- Ultra-Advanced Navigation --- */
+/* --- Floating Navigation & Larger Logo --- */
 .header { 
     position: fixed; 
-    top: 20px; left: 50%; 
+    top: 25px; left: 50%; 
     transform: translateX(-50%); 
     width: 90%; 
     max-width: var(--container-width); 
-    background: rgba(10,10,10,0.4); 
+    background: rgba(10, 10, 10, 0.4); 
     backdrop-filter: blur(20px); 
     border: 1px solid var(--border); 
     border-radius: 100px; 
-    padding: 12px 30px; 
+    padding: 12px 35px; 
     z-index: 1000; 
     transition: var(--transition); 
 }
 
 .header.scrolled { 
-    top: 10px; 
+    top: 15px; 
     width: 95%; 
-    background: rgba(0,0,0,0.85); 
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 8px 35px;
 }
 
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
 
-.nav-links { display: flex; gap: 30px; list-style: none; }
+/* Logo Sizing & Transition */
+.logo img {
+    height: 52px; /* Increased for better visibility */
+    width: auto;
+    display: block;
+    transition: height 0.3s ease;
+    filter: invert(1);
+}
+
+.header.scrolled .logo img {
+    height: 42px; /* Smoothly shrinks on scroll */
+}
+
+.nav-links { 
+    display: flex; 
+    gap: 30px; 
+    list-style: none; 
+}
 
 .nav-links a { 
     color: var(--text-dim); 
@@ -71,9 +114,12 @@ body {
     transition: 0.3s; 
 }
 
-.nav-links a:hover { color: #fff; text-shadow: 0 0 10px var(--accent); }
+.nav-links a:hover { 
+    color: #fff; 
+    text-shadow: 0 0 10px var(--accent); 
+}
 
-/* --- High-End Typography --- */
+/* --- Typography System --- */
 .gradient-text { 
     background: linear-gradient(to right, #fff, var(--accent), var(--secondary)); 
     -webkit-background-clip: text; 
@@ -97,9 +143,12 @@ body {
     margin-bottom: 15px; 
 }
 
-/* --- Layout Sections --- */
-.section-padding { padding: 120px 0; }
+/* --- Layout Architecture --- */
+.section-padding { 
+    padding: 120px 0; 
+}
 
+/* Hero Section */
 .hero { 
     height: 100vh; 
     display: flex; 
@@ -108,21 +157,23 @@ body {
     text-align: center; 
 }
 
-.hero-content { max-width: 900px; }
+.hero-content { 
+    max-width: 900px; 
+}
 
 .hero-content p { 
     font-size: 1.2rem; 
     color: var(--text-dim); 
     margin-bottom: 40px; 
     max-width: 650px; 
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0 auto 40px; 
 }
 
-/* Bento Grid Alignment */
+/* Bento Grid: Precise 3-Column Services */
+
 .bento-grid { 
     display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 25px; 
     margin-top: 60px; 
 }
@@ -133,18 +184,22 @@ body {
     padding: 50px 40px; 
     border-radius: 35px; 
     transition: var(--transition); 
-    text-align: left; /* Aligns text within cards */
+    text-align: left; 
 }
 
 .bento-card:hover { 
     border-color: var(--accent); 
     transform: translateY(-10px); 
-    background: rgba(112,0,255,0.05); 
+    background: rgba(112, 0, 255, 0.05); 
 }
 
-.icon-wrap { font-size: 2.5rem; color: var(--accent); margin-bottom: 25px; }
+.icon-wrap { 
+    font-size: 2.5rem; 
+    color: var(--accent); 
+    margin-bottom: 25px; 
+}
 
-/* Split Grid for About */
+/* Split Grid: Balanced Content/Image Ratio */
 .reveal-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -152,8 +207,46 @@ body {
     align-items: center;
 }
 
-/* Animations */
-.fade-up { opacity: 0; transform: translateY(40px); transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 992px) {
+    .reveal-grid { grid-template-columns: 1fr; gap: 40px; }
+}
 
+/* --- Buttons --- */
+.cta-button {
+    background: #fff; 
+    color: #000; 
+    padding: 12px 28px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: 700; 
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
 
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* --- Reveal Animations --- */
+.fade-up { 
+    opacity: 0; 
+    transform: translateY(40px); 
+    transition: 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); 
+}
+
+.fade-up.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Footer Alignment */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; }
+}
