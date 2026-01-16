@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Biz International | Digital Evolution Dubai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="4Biz Logo" style="height: 35px; filter: invert(1);">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="microsoft.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-button">START EVOLUTION</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content fade-up">
+            <span class="badge">Impacting Infinite</span>
+            <h1>Your Partner in <br><span class="gradient-text">Digital Evolution</span></h1>
+            <p>4Biz International stands out in Dubai's business scene, breaking the conventional company mold. We instill confidence in every step you take with us through trust and innovation.</p>
+            <div class="hero-btns">
+                <a href="contact.html" class="btn-main">Get an Appointment</a>
+                <a href="#about" class="btn-outline">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="reveal-grid">
+                <div class="reveal-left">
+                    <span class="section-tag">About 4Biz</span>
+                    <h2 class="ultra-heading">An Unconventional <span class="gradient-text">Approach to Success</span></h2>
+                    <p class="content-text">
+                        Our unconventional approach to success begins from the start, with a mission to instill confidence in every step you take with us. 4Biz International stands out in Dubai's business scene, breaking the conventional company mold. 
+                    </p>
+                    <p class="content-text dimmed">
+                        We promise an unmatched experience rooted in trust, innovation, and excellence. At 4Biz, we're fully committed to your success. Going beyond traditional IT consulting, we aim to be your dedicated partner in achieving your loftiest business goals.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Commitment</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Client</h3>
+                            <p>Centric Excellence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <div class="image-glass-wrap">
+                        <img src="assets/images/image-box/about-post-1.jpg" alt="4Biz Evolution">
+                        <div class="floating-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding services-dark">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="ultra-heading">Comprehensive <span class="gradient-text">Digital Solutions</span></h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card fade-up">
+                    <div class="icon-wrap"><i class="fab fa-microsoft"></i></div>
+                    <h3>Microsoft Dynamics 365</h3>
+                    <p>Unify CRM and ERP for streamlined business operations. Enhance success with efficient management of sales, customer service, and finance, empowering data-driven decisions.</p>
+                </div>
+                <div class="bento-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="icon-wrap"><i class="fas fa-magnifying-glass-chart"></i></div>
+                    <h3>Search Engine Optimization</h3>
+                    <p>Elevate your online visibility. Optimize for high search rankings, faster outcomes, and a surge in leads, making your online presence shine in the competitive UAE market.</p>
+                </div>
+                <div class="bento-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="icon-wrap"><i class="fas fa-code"></i></div>
+                    <h3>Web Design & Development</h3>
+                    <p>Optimize your presence with all-in-one Web Management. Cost-effective solutions, expert support, and cutting-edge technology for a decisive competitive edge.</p>
+                </div>
+                <div class="bento-card fade-up">
+                    <div class="icon-wrap"><i class="fas fa-share-nodes"></i></div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Manage popular platforms including Facebook, Instagram, LinkedIn, and Twitter to reach a larger audience and engage with customers effectively.</p>
+                </div>
+                <div class="bento-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="icon-wrap"><i class="fas fa-mobile-screen-button"></i></div>
+                    <h3>Mobile App Development</h3>
+                    <p>Crafting digital marvels. From concept to launch, we build user-centric mobile applications that define the essence of your digital brand.</p>
+                </div>
+                <div class="bento-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="icon-wrap"><i class="fas fa-server"></i></div>
+                    <h3>Domain & Hosting</h3>
+                    <p>Reliable servers and secure hosting solutions. We ensure your business remains online 24/7 with professional domain management and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding commitment-wrap">
+        <div class="container">
+            <div class="commitment-card fade-up">
+                <div class="content">
+                    <span class="section-tag">The Promise</span>
+                    <h2>Our Commitment to Your Vision</h2>
+                    <p>At 4Biz, our promise is centered on client-centric excellence, where your success drives every decision. We build enduring partnerships to unlock your business's true potential, making ambitious dreams a reality.</p>
+                    <ul class="promise-list">
+                        <li><i class="fas fa-check-circle"></i> Innovation rooted in excellence</li>
+                        <li><i class="fas fa-check-circle"></i> Enduring business partnerships</li>
+                        <li><i class="fas fa-check-circle"></i> Data-driven decision making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-tag">Knowledge</span>
+                <h2>Frequently <span class="gradient-text">Asked Questions</span></h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item fade-up">
+                    <button class="faq-trigger">What services does 4Biz International offer? <i class="fas fa-plus"></i></button>
+                    <div class="faq-content">
+                        <p>We offer a wide range of services including Microsoft Dynamics 365, SEO, Social Media Management, Web Design and Development, Domain and Hosting, Email Marketing, Mobile App Development, and CRM software.</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h1>4BIZ.</h1>
+                    <p>Breaking the conventional mold in Dubai since 2015.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Office 104, Crystal Building, Al Karama, Dubai</p>
+                    <p>+971 52 79 25 100</p>
+                    <p>info@4bizinternational.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 4Biz International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
