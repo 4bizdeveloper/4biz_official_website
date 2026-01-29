@@ -14,24 +14,30 @@
 
     <canvas id="particleCanvas"></canvas>
 
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="4Biz International">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-            <a href="contact.html" class="cta-button">GET STARTED</a>
-        </div>
-    </header>
+<header class="header">
+  <div class="container">
+    <a class="logo" href="/">
+      <img src="assets\images\logo.png" alt="4BIZ logo" />
+      <span class="brand">4BIZ</span>
+    </a>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a class="btn-cta" href="#contact">Get Started</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
 
     <section class="hero">
         <div class="container hero-content fade-up">
@@ -110,10 +116,104 @@
         </div>
     </section>
 
-    <footer class="section-padding" style="border-top: 1px solid var(--border); background: #000;">
+
+<!-- ABOUT -->
+<section id="about" class="about container">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>About 4Biz International</h2>
+      <p>4Biz International stands out in Dubai's business scene with an unconventional approach to success — built on trust, innovation, and excellence. We act as a dedicated partner to help businesses scale with tailored digital solutions.</p>
+      <a class="btn btn-primary" href="#contact">Get An Appointment</a>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <h3>Commitment</h3>
+        <p>Client-centric excellence; long-term partnerships to unlock business potential.</p>
+      </div>
+      <div class="stat">
+        <h3>Impact</h3>
+        <p>Web, SEO, CRM, Content, Branding, Hosting, Social Media & more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT -->
+<section id="commitment" class="commitment container">
+  <h2>Our Commitment</h2>
+  <p>We go beyond traditional IT consulting to become your partner in achieving ambitious business goals. Every decision is driven by your success.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services container">
+  <h2>What We Do</h2>
+  <div class="services-grid">
+    <article class="card">
+      <h3>Microsoft Dynamics 365</h3>
+      <p>Unify CRM and ERP for streamlined operations and data-driven decisions.</p>
+    </article>
+    <article class="card">
+      <h3>Search Engine Optimization</h3>
+      <p>Improve visibility, rankings, and lead generation with targeted SEO strategies.</p>
+    </article>
+    <article class="card">
+      <h3>Web Design & Development</h3>
+      <p>Modern, responsive websites with performance and conversion focus.</p>
+    </article>
+    <article class="card">
+      <h3>More Services</h3>
+      <p>Content marketing, hosting, branding, photoshoots, email & SMS marketing.</p>
+    </article>
+  </div>
+  <a class="btn btn-outline" href="#contact">Get In Touch</a>
+</section>
+
+
+
+<!-- FAQ -->
+<section id="faq" class="faq container">
+  <h2>FAQ's</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">What services does 4Biz International offer?</button>
+      <div class="faq-a">Web development, CRM solutions, hosting, SEO, social media, branding and more.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How can digital marketing help my business in the UAE?</button>
+      <div class="faq-a">Increase visibility, attract customers, improve reputation, and drive sales.</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact container">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +971 52 79 25 100</p>
+  <p><strong>Email:</strong> info@4bizinternational.com</p>
+  <p><strong>Address:</strong> Office 104, Crystal Building, Near ADCB Metro Station, Al Karama, Dubai, UAE</p>
+  <a class="btn btn-primary" href="mailto:info@4bizinternational.com">Email Us</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="section-padding" style="border-top: 1px solid var(--border); background: linear-gradient(180deg, rgba(7,10,20,0.60), rgba(11,15,26,0.64)); ">
         <div class="container footer-grid">
             <div>
-                <h2 class="ultra-heading" style="font-size: 2.2rem; margin-bottom: 15px;">4BIZ<span style="color: var(--accent);">.</span></h2>
+            <a class="logo" href="/">
+            <img src="assets\images\logo.png" alt="4BIZ logo">
+           
+            </a>
+                <h2 class="ultra-heading" style="font-size: 2.2rem; margin-bottom: 15px;">4BIZ</h2>
                 <p style="color: var(--text-dim); max-width: 300px;">Breaking the conventional mold in Dubai since 2015. Your partner in digital excellence.</p>
             </div>
             <div>
