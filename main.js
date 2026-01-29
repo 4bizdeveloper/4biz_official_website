@@ -371,3 +371,25 @@ document.addEventListener('DOMContentLoaded', () => {
   nav.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> nav.classList.remove('open')));
 })();
 
+
+
+function toggleWidget() {
+    const container = document.querySelector('.glass-widget-container');
+    container.classList.toggle('active');
+    
+    // Optional: Change icon from chat to close
+    const icon = document.querySelector('#mainBtn i');
+    if (container.classList.contains('active')) {
+        icon.classList.replace('fa-comments', 'fa-times');
+    } else {
+        icon.classList.replace('fa-times', 'fa-comments');
+    }
+}
+
+// Close widget when clicking outside
+document.addEventListener('click', (e) => {
+    const container = document.querySelector('.glass-widget-container');
+    if (!container.contains(e.target) && container.classList.contains('active')) {
+        toggleWidget();
+    }
+});
