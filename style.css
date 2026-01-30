@@ -2,6 +2,36 @@
     Focus: Mathematical Alignment & High-End Visuals
 */
 
+
+/* MOBILE-FIRST OVERRIDES - place at top or in a file loaded after style.css */
+:root { --header-height: 64px; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+* { box-sizing: border-box; }
+
+/* Make container fluid on small screens */
+.container { padding: 0 16px; max-width: 1200px; width: 100%; }
+
+/* Prevent any element from forcing horizontal scroll */
+img, video, iframe, .hero-content, .bento-grid, .reveal-grid { max-width: 100%; height: auto; }
+
+/* Header & logo sizing for phones */
+.logo img { width: 48px !important; height: 48px !important; }
+
+/* Hero: avoid forcing 100vh overflow on mobile */
+.hero { min-height: calc(100vh - var(--header-height)); padding-top: calc(var(--header-height) + 12px); }
+
+/* Reduce heavy paddings on small screens */
+.section-padding { padding: 48px 0; }
+.bento-card, .about-grid, .services-grid { padding: 20px; }
+
+/* Ensure mobile nav is accessible and not off-canvas overflow */
+@media (max-width: 880px) {
+  .nav { inset: calc(var(--header-height) + 8px) 12px auto 12px; max-height: calc(100vh - var(--header-height) - 32px); overflow:auto; }
+  .hero-content p { font-size: 1rem; }
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
