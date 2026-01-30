@@ -393,3 +393,13 @@ document.addEventListener('click', (e) => {
         toggleWidget();
     }
 });
+
+
+
+// ensure mobile nav closes on resize to avoid stuck open state
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 880) {
+    document.querySelector('.nav')?.classList.remove('open');
+    document.querySelector('.hamburger')?.setAttribute('aria-expanded','false');
+  }
+});
